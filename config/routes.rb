@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'the_gossip_project/:first_name', to: 'the_gossip_project#welcome'
 
+  get 'the_gossip_project/home/:id', to: 'the_gossip_project#one_gossip', as: :gossip
+
   
   get "up" => "rails/health#show", as: :rails_health_check
 

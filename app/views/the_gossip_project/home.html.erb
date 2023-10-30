@@ -1,6 +1,6 @@
 <head>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="http://localhost:3000/the_gossip_project/home">Navbar</a>
+  <a class="navbar-brand" href="http://localhost:3000/the_gossip_project/home">TGP</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -27,4 +27,11 @@
 
 
 <h1>TheGossipProject</h1>
-<p>HOME</p>
+<h2>Bienvenue à toi cher gossipeur !</h2>
+
+<p>Voici tous les gossips qui ont été écrit :</p>
+<% @gossips.each do |i|%>
+  <p>
+    <li><%= link_to "de #{i.user.first_name} : #{i.title}", gossip_path(i) %></li>
+  </p>
+<% end %> <!-- pour chaque itération, on appelle le first_name du user correspondant au titre de son gossip -->

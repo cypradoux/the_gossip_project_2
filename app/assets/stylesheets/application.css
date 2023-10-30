@@ -17,3 +17,21 @@
 h1{
     text-align: center;
 }
+
+h2{
+    text-align: center;
+}
+
+p{
+    padding-left:20px ;
+    font-size: 20px;
+}
+
+li{
+    padding-left: 30px;
+}
+
+a{
+    padding-left: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
